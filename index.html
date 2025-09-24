@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Portfolio</title>
+  <!-- Bootstrap (kept for grid/responsive utilities if needed later) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="nav-container">
+    <a class="logo" href="#"><img src="images/logo.png" alt="Logo"></a>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul>
+    <a href="#" class="hire-btn">Hire me</a>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="hero-container">
+    
+    <!-- LEFT IMAGE -->
+    <div class="hero-left">
+      <div class="hero-img-wrapper">
+        <img src="images/hero.png" alt="Hero Image" class="hero-img">
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-telegram"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- RIGHT TEXT -->
+    <div class="hero-right">
+      <h3>Hi I'm</h3>
+      <h1><span class="kupa">D</span>ylan <span class="kupa">K</span>anyimo.</h1>
+      <h4>Expert in <span id="animated-text" class="highlight-light">U/X Design</span></h4>
+      <p>
+        I bring ideas to life through smart design, user-centered thinking, and modern tools like 
+        <span class="highlight">Figma</span>, 
+        <span class="highlight">Adobe Creative Suite</span>, 
+        and web technologies.
+      </p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Resume</a>
+        <a href="#" class="btn-outline">Portfolio</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="about-me-section">
+    <div class="background-map-overlay"></div>
+    
+    <div class="content-left">
+        <h1>About <span class="highlight-text">Me</span></h1>
+        <h2>Designer</h2>
+        <p>I believe in modern tools, smart methods, and clear communication. Whether it's collaborating on a big project or creating something meaningful from scratch, I design with purpose — and a passion for creating experiences people remember.</p>
+        <button class="action-button">Button</button>
+    </div>
+    
+    <div class="content-right">
+        <div class="main-image-container">
+            <img src="images/Me.png" alt="Your Profile Image" class="main-avatar">
+        </div>
+
+        <div class="tool-icons">
+            <img src="images/PS.png" alt="Photoshop" class="tool-icon ps">
+            <img src="images/Pinterest.png" alt="Pinterest" class="tool-icon pinterest">
+            <img src="images/Figma.png" alt="Figma" class="tool-icon figma">
+            <img src="images/Canva.png" alt="Canva" class="tool-icon canva">
+            <img src="images/Ai.png" alt="Illustrator" class="tool-icon ai">
+        </div>
+    </div>
+</section>
+<section class="portfolio-section">
+  <div class="portfolio-header">
+    <h2 class="portfolio-title">Portfolio</h2>
+  </div>
+  <div class="portfolio-gallery">
+    <div class="portfolio-gallery-inner">
+      <div class="portfolio-item">
+        <img src="images/card1.png" alt="Portfolio Item 1">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/card3.png" alt="Portfolio Item 2">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/card2.png" alt="Portfolio Item 3">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/card4.png" alt="Portfolio Item 4">
+      </div>
+      <!-- Duplicate items for seamless loop -->
+      <div class="portfolio-item">
+        <img src="images/card1.png" alt="Portfolio Item 1">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/card2.png" alt="Portfolio Item 2">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/card3.png" alt="Portfolio Item 3">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/card4.png" alt="Portfolio Item 4">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="resume-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 resume-left">
+                <h2 class="section-title">Software Skills</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <img src="images/Ps.png" alt="Photoshop icon" class="skill-icon">
+                        <span>Photoshop</span>
+                        <input type="range" class="skill-bar" min="0" max="100" value="80">
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/Ai.png" alt="Illustrator icon" class="skill-icon">
+                        <span>Illustrator</span>
+                        <input type="range" class="skill-bar" min="0" max="100" value="70">
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/Canva.png" alt="Canva icon" class="skill-icon">
+                        <span>Canva</span>
+                        <input type="range" class="skill-bar" min="0" max="100" value="90">
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/Figma.png" alt="Figma icon" class="skill-icon">
+                        <span>Figma</span>
+                        <input type="range" class="skill-bar" min="0" max="100" value="60">
+                    </div>
+                </div>
+
+                <h2 class="section-title">Languages</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span>English</span>
+                        <input type="range" class="skill-bar" min="0" max="100" value="95">
+                    </div>
+                    <div class="skill-item">
+                        <span>Shona</span>
+                        <input type="range" class="skill-bar" min="0" max="100" value="100">
+                    </div>
+                </div>
+
+                <h2 class="section-title">Personal Skills</h2>
+                <div class="personal-skills">
+                    Creativity - Team work - Organization
+                </div>
+            </div>
+
+            <div class="col-md-4 resume-center">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="experience-icon">Vn</div>
+                        <div class="experience-details">
+                            <h3>Vonrode investents</h3>
+                            <p>Graphic Designer</p>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-icon">M</div>
+                        <div class="experience-details">
+                            <h3>Mustimart</h3>
+                            <p>Graphic Designer</p>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-icon">Cr</div>
+                        <div class="experience-details">
+                            <h3>Creative</h3>
+                            <p>UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3>UI/UX Design</h3>
+                    <p>@Uncommon.org</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 resume-right">
+                <h2 class="section-title">What can i do?</h2>
+                <div class="what-i-do-list">
+                    <p>Logo, Flyers, Banners, Posters,<br>Business Cards, Website UI/Ux</p>
+                </div>
+
+                <h2 class="section-title">Design Skills</h2>
+                <div class="design-skills-list">
+                    <p>Creative - planning & strategy</p>
+                    <p>Signs & typograph - layout</p>
+                    <p>Grid - color sense - inspiration</p>
+                </div>
+
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <div class="hobbies-list">
+                    <div class="hobby-item">
+                        <img src="images/card2.png" alt="Travelling icon">
+                        <p>Travelling</p>
+                    </div>
+                    <div class="hobby-item">
+                        <img src="images/card1.png" alt="Drawing icon">
+                        <p>Drawing</p>
+                    </div>
+                    <div class="hobby-item">
+                        <img src="images/card3.png" alt="Designing icon">
+                        <p>Designing</p>
+                    </div>
+                    <div class="hobby-item">
+                        <img src="images/card4.png" alt="Photography icon">
+                        <p>Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="contact-header">
+        <h1>Contact <span class="highlight-text-contact">Me</span></h1>
+    </div>
+    <form class="contact-form">
+        <div class="form-group-row">
+            <input type="text" class="form-control" placeholder="Dylan Kanyimo">
+            <input type="text" class="form-control" placeholder="+263 781 542 001">
+        </div>
+        <div class="form-group-row">
+            <input type="email" class="form-control" placeholder="dylankanyimo263@gmail.co">
+            <input type="text" class="form-control" placeholder="12528 Kuwadzana Ext">
+        </div>
+        <div class="form-group-full">
+            <textarea class="form-control message-box" placeholder="Send Message"></textarea>
+        </div>
+        <div class="form-group-submit">
+            <button type="submit" class="submit-button">Send</button>
+        </div>
+    </form>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Animation Script -->
+<script>
+  const specialties = ["UX Design", "Graphic Design", "Mobile Application Design"];
+  const textEl = document.getElementById("animated-text");
+  let index = 0;
+
+  function typeText(text, i = 0) {
+    if (i < text.length) {
+      textEl.innerHTML = text.slice(0, i + 1);
+      setTimeout(() => typeText(text, i + 1), 100);
+    } else {
+      setTimeout(() => eraseText(text), 2000);
+    }
+  }
+
+  function eraseText(text, i = text.length) {
+    if (i >= 0) {
+      textEl.innerHTML = text.slice(0, i);
+      setTimeout(() => eraseText(text, i - 1), 50);
+    } else {
+      index = (index + 1) % specialties.length;
+      typeText(specialties[index]);
+    }
+  }
+
+  // start the animation
+  typeText(specialties[index]);
+</script>
+
+</body>
+</html>
