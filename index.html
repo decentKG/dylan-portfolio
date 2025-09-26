@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,17 +25,17 @@
   <div class="nav-container">
     <a class="logo" href="#"><img src="images/logo.png" alt="Logo"></a>
     <ul class="nav-links">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">Portfolio</a></li>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
     </ul>
-    <a href="#" class="hire-btn">Hire me</a>
+    <a href="#contact" class="hire-btn">Hire me</a>
   </div>
 </nav>
 
-<!-- ===== HERO SECTION ===== -->
-<section class="hero">
+<!-- ===== HERO SECTION (Home) ===== -->
+<section id="home" class="hero">
   <div class="hero-container">
     
     <!-- LEFT IMAGE -->
@@ -37,9 +44,9 @@
         <img src="images/hero.png" alt="Hero Image" class="hero-img">
         <!-- Social Icons -->
         <div class="social-icons">
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-telegram"></i></a>
-          <a href="#"><i class="bi bi-whatsapp"></i></a>
+          <a href="#"><i class="bi bi-instagram" id="instagram"></i></a>
+          <a href="#"><i class="bi bi-telegram" id="telegram"></i></a>
+          <a href="#"><i class="bi bi-whatsapp" id="whatsapp"></i></a>
           <a href="#"><i class="bi bi-facebook"></i></a>
         </div>
       </div>
@@ -49,7 +56,7 @@
     <div class="hero-right">
       <h3>Hi I'm</h3>
       <h1><span class="kupa">D</span>ylan <span class="kupa">K</span>anyimo.</h1>
-      <h4>Expert in <span id="animated-text" class="highlight-light">U/X Design</span></h4>
+      <h4>Expert in <span id="animated-text" class="highlight-light">U/X Designer</span></h4>
       <p>
         I bring ideas to life through smart design, user-centered thinking, and modern tools like 
         <span class="highlight">Figma</span>, 
@@ -57,14 +64,16 @@
         and web technologies.
       </p>
       <div class="hero-buttons">
-        <a href="#" class="btn-primary">Resume</a>
-        <a href="#" class="btn-outline">Portfolio</a>
+        <a href="ALUTA CONTINUA.docx" class="btn-primary">Resume</a>
+        <a href="#portfolio" class="btn-outline">Portfolio</a>
       </div>
     </div>
 
   </div>
 </section>
-<section class="about-me-section">
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="about-me-section">
     <div class="background-map-overlay"></div>
     
     <div class="content-left">
@@ -88,7 +97,9 @@
         </div>
     </div>
 </section>
-<section class="portfolio-section">
+
+<!-- ===== PORTFOLIO SECTION ===== -->
+<section id="portfolio" class="portfolio-section">
   <div class="portfolio-header">
     <h2 class="portfolio-title">Portfolio</h2>
   </div>
@@ -122,7 +133,9 @@
     </div>
   </div>
 </section>
-<section class="resume-section">
+
+<!-- ===== RESUME SECTION ===== -->
+<section id="resume" class="resume-section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 resume-left">
@@ -237,7 +250,9 @@
         </div>
     </div>
 </section>
-<section class="contact-section">
+
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contact" class="contact-section">
     <div class="contact-header">
         <h1>Contact <span class="highlight-text-contact">Me</span></h1>
     </div>
@@ -264,7 +279,7 @@
 
 <!-- Animation Script -->
 <script>
-  const specialties = ["UX Design", "Graphic Design", "Mobile Application Design"];
+  const specialties = ["UX Designing", "Graphic Designing", "Mobile Application Designing"];
   const textEl = document.getElementById("animated-text");
   let index = 0;
 

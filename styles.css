@@ -8,7 +8,8 @@
 /* Body */
 body {
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(circle at top left, #0d0d1a, #0a1a2f, #071d2f);
+    /* background: radial-gradient(circle at top left, #0d0d1a, #0a1a2f, #071d2f); */
+    background: #151925;
     color: #fff;
     padding-top: 100px; /* Space for the fixed navbar */
 }
@@ -66,7 +67,7 @@ nav {
     background: linear-gradient(90deg, #2c29e0, #1337c7);
     color: #fff;
     font-size: 23px;
-    padding: 8px 25px;
+    padding: 8px 10px;
     border-radius: 25px;
     text-decoration: none;
     transition: 0.3s;
@@ -123,10 +124,10 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    width: 600px;
-    height: 600px;
-    margin-left: -300px;
-    margin-top: -300px;
+    width: 550px;
+    height: 550px;
+    margin-left: -280px;
+    margin-top: -250px;
     border-radius: 50%;
     animation: orbit 12s linear infinite;
     transform-origin: center center;
@@ -139,9 +140,31 @@ nav {
 .social-icons a {
     position: absolute;
     font-size: 2rem;
-    color: white;
+    /* color: white; */
     transition: 0.3s;
+
+
 }
+
+    #whatsapp{
+        color: #25D366;
+    }
+
+#instagram {
+    background: radial-gradient(circle at 30% 107%, #f58529 0%, #dd2a7b 25%, #8134af 50%, #515bd4 100%);
+    -webkit-background-clip: text; /* Clip the gradient to the icon */
+    -webkit-text-fill-color: transparent; /* Make the icon itself transparent */
+    display: inline-block;
+}
+
+#telegram {
+    background: linear-gradient(45deg, #0088cc 0%, #00cfff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+
 
 .social-icons a:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
 .social-icons a:nth-child(2) { top: 50%; right: 0; transform: translateY(-50%); }
@@ -174,12 +197,12 @@ nav {
     font-size: 2.8rem;
     font-weight: 800;
     margin: 10px 0;
-    -webkit-text-stroke: 1.2px #000000;
+    -webkit-text-stroke: 2px #000000;
     -webkit-text-fill-color: white;
 }
 
 .hero-right h1 span {
-    -webkit-text-stroke: 1.2px black;
+    -webkit-text-stroke: 2px black;
     -webkit-text-fill-color: #0d6efd;
     color: #0d6efd;
 }
@@ -245,7 +268,7 @@ nav {
 }
 
 .highlight-light {
-    color: #00cfff;
+    color: #1d38a5;
     font-weight: bold;
 }
 
@@ -294,7 +317,7 @@ nav {
 }
 
 .highlight-text {
-    color: #7b68ee;
+    color: #142E94;
 }
 
 .content-left p {
@@ -306,7 +329,7 @@ nav {
 }
 
 .action-button {
-    background-color: #093b86;
+    background-color: #142E94;
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -318,7 +341,8 @@ nav {
 }
 
 .action-button:hover {
-    background-color: #6a5acd;
+    background-color: #0033ff;
+    border: 0.1px solid whitesmoke;
 }
 
 .content-right {
@@ -390,11 +414,11 @@ nav {
     z-index: 4;
 }
 
-.ps { top: 10%; left: 10%; }
+.ps { top: -5%; left: -40%; }
 .pinterest { top: 5%; right: 5%; }
-.figma { bottom: 20%; right: 10%; }
-.canva { bottom: 10%; left: 30%; }
-.ai { bottom: 5%; left: 0%; }
+.figma { bottom: 40%; right: 10%; }
+.canva { bottom: 25%; left: -10%; }
+.ai { bottom: 10%; left: -40%; }
 
 /* Portfolio Section */
 /* Portfolio Section */
@@ -531,8 +555,9 @@ nav {
 .contact-header h1 {
     font-size: 3em;
     font-weight: bold;
-    color: #4a90e2; /* Blue color for 'Contact' */
+    color: #211497; /* Blue color for 'Contact' */
     margin-bottom: 40px;
+    align-items: start;
 }
 
 .highlight-text-contact {
@@ -556,24 +581,25 @@ nav {
 
 .form-control {
     background-color: transparent;
-    border: 2px solid #3f51b5;
+    border: 2px solid whitesmoke;
     border-radius: 8px;
     color: #fff;
     /* Increased padding to give more height */
     padding: 20px 15px;
-    font-size: 1.1em;
+    font-size: 1.5em;
+    font-style: bolder;
     width: 100%;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-control:focus {
     outline: none;
-    border-color: #6a5acd;
+    border-color: #211497;
     box-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
 }
 
 .form-control::placeholder {
-    color: #a0a0a0;
+    color: #211497;
 }
 
 /* Adjusted height for the message box */
@@ -591,7 +617,7 @@ nav {
 }
 
 .submit-button {
-    background-color: #4a90e2;
+    background-color: #142E94;
     color: #fff;
     border: none;
     padding: 15px 40px;
@@ -621,6 +647,7 @@ nav {
 }
 
 .section-title {
+    text-decoration: underline solid #211497;
     font-size: 2em;
     font-weight: bold;
     color: #fff;
@@ -635,6 +662,7 @@ nav {
 /* Left Column Styling */
 .skill-list {
     margin-bottom: 40px;
+   
 }
 
 .skill-item {
@@ -668,13 +696,14 @@ nav {
 
 .skill-bar::-webkit-slider-thumb {
     -webkit-appearance: none;
+    /* position: fixed; */
     appearance: none;
     width: 10px;
     height: 10px;
     background: #fff;
     /* border: 2px solid #4a90e2; */
     border-radius: 50%;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .personal-skills {
